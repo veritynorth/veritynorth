@@ -6,6 +6,7 @@
   --purple: #6d4c8d;
   --warm-gray: #d8cdbf;
   --paper-shadow: 0 8px 24px rgba(29, 26, 23, 0.08);
+  --hero-tint: #efe2cf;
 }
 
 * { box-sizing: border-box; }
@@ -63,7 +64,7 @@ section { padding: 5rem 0; }
 
 .hero {
   padding-top: 6rem;
-  background: linear-gradient(160deg, #f6efe3 0%, #efe2cf 60%, #e8d9c2 100%);
+  background: linear-gradient(160deg, var(--cream) 0%, var(--hero-tint) 58%, #e5d3bb 100%);
   border-bottom: 1px solid var(--warm-gray);
 }
 
@@ -246,4 +247,13 @@ footer {
   }
 
   section { padding: 4rem 0; }
+}
+
+
+.hero-image-caption {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--purple);
+  padding: 0.3rem 0.25rem 0.75rem;
 }
